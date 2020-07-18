@@ -9,6 +9,7 @@ class Session extends Model {
       },
       { sequelize }
     );
+    return this;
   }
 }
 

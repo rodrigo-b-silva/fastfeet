@@ -16,6 +16,11 @@ class RecipientController {
 
     return res.status(200).json(recipient);
   }
+
+  async index(req, res) {
+    const recipients = await Recipient.findAll({});
+    return res.status(200).json(recipients);
+  }
 }
 
 export default new RecipientController();
